@@ -1,0 +1,485 @@
+<?xml version="1.0" ?>
+<enemy>
+    <behaviour>
+        <root x="110" y="40">
+            <normal>
+                <condition id="hasTarget">
+                    <string id="condition" values="yesno">no</string>
+                    <normal>
+                        <action id="adjustCounter">
+                            <string id="id">Toolkit_TargetPersist_LastTargetClass</string>
+                            <string id="value">-1</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                    </normal>
+                    <else>
+                        <condition id="checkClass">
+                            <string id="check on" values="targetself">target</string>
+                            <string id="class">Vampire</string>
+                            <normal>
+                                <action id="adjustCounter">
+                                    <string id="id">Toolkit_TargetPersist_LastTargetClass</string>
+                                    <string id="value">1</string>
+                                    <string id="adjust method" values="valueadjust">set</string>
+                                </action>
+                            </normal>
+                        </condition>
+                        <condition id="checkClass">
+                            <string id="check on" values="targetself">target</string>
+                            <string id="class">Tank</string>
+                            <normal>
+                                <action id="adjustCounter">
+                                    <string id="id">Toolkit_TargetPersist_LastTargetClass</string>
+                                    <string id="value">2</string>
+                                    <string id="adjust method" values="valueadjust">set</string>
+                                </action>
+                            </normal>
+                        </condition>
+                        <condition id="checkClass">
+                            <string id="check on" values="targetself">target</string>
+                            <string id="class">Blazer</string>
+                            <normal>
+                                <action id="adjustCounter">
+                                    <string id="id">Toolkit_TargetPersist_LastTargetClass</string>
+                                    <string id="value">3</string>
+                                    <string id="adjust method" values="valueadjust">set</string>
+                                </action>
+                            </normal>
+                        </condition>
+                        <condition id="checkClass">
+                            <string id="check on" values="targetself">target</string>
+                            <string id="class">Heavy</string>
+                            <normal>
+                                <action id="adjustCounter">
+                                    <string id="id">Toolkit_TargetPersist_LastTargetClass</string>
+                                    <string id="value">4</string>
+                                    <string id="adjust method" values="valueadjust">set</string>
+                                </action>
+                            </normal>
+                        </condition>
+                        <condition id="checkClass">
+                            <string id="check on" values="targetself">target</string>
+                            <string id="class">Dasher</string>
+                            <normal>
+                                <action id="adjustCounter">
+                                    <string id="id">Toolkit_TargetPersist_LastTargetClass</string>
+                                    <string id="value">5</string>
+                                    <string id="adjust method" values="valueadjust">set</string>
+                                </action>
+                            </normal>
+                        </condition>
+                        <condition id="checkClass">
+                            <string id="check on" values="targetself">target</string>
+                            <string id="class">Butterfly</string>
+                            <normal>
+                                <action id="adjustCounter">
+                                    <string id="id">Toolkit_TargetPersist_LastTargetClass</string>
+                                    <string id="value">6</string>
+                                    <string id="adjust method" values="valueadjust">set</string>
+                                </action>
+                            </normal>
+                        </condition>
+                        <condition id="checkClass">
+                            <string id="check on" values="targetself">target</string>
+                            <string id="class">Maw</string>
+                            <normal>
+                                <action id="adjustCounter">
+                                    <string id="id">Toolkit_TargetPersist_LastTargetClass</string>
+                                    <string id="value">7</string>
+                                    <string id="adjust method" values="valueadjust">set</string>
+                                </action>
+                            </normal>
+                        </condition>
+                        <condition id="checkClass">
+                            <string id="check on" values="targetself">target</string>
+                            <string id="class">Chameleon</string>
+                            <normal>
+                                <action id="adjustCounter">
+                                    <string id="id">Toolkit_TargetPersist_LastTargetClass</string>
+                                    <string id="value">8</string>
+                                    <string id="adjust method" values="valueadjust">set</string>
+                                </action>
+                            </normal>
+                        </condition>
+                        <condition id="checkClass">
+                            <string id="check on" values="targetself">target</string>
+                            <string id="class">Cowboy</string>
+                            <normal>
+                                <action id="adjustCounter">
+                                    <string id="id">Toolkit_TargetPersist_LastTargetClass</string>
+                                    <string id="value">9</string>
+                                    <string id="adjust method" values="valueadjust">set</string>
+                                </action>
+                            </normal>
+                        </condition>
+                        <condition id="checkClass">
+                            <string id="check on" values="targetself">target</string>
+                            <string id="class">Assassin</string>
+                            <normal>
+                                <action id="adjustCounter">
+                                    <string id="id">Toolkit_TargetPersist_LastTargetClass</string>
+                                    <string id="value">10</string>
+                                    <string id="adjust method" values="valueadjust">set</string>
+                                </action>
+                            </normal>
+                        </condition>
+                        <condition id="checkClass">
+                            <string id="check on" values="targetself">target</string>
+                            <string id="class">Hunter</string>
+                            <normal>
+                                <action id="adjustCounter">
+                                    <string id="id">Toolkit_TargetPersist_LastTargetClass</string>
+                                    <string id="value">11</string>
+                                    <string id="adjust method" values="valueadjust">set</string>
+                                </action>
+                            </normal>
+                        </condition>
+                        <condition id="checkClass">
+                            <string id="check on" values="targetself">target</string>
+                            <string id="class">Paladin</string>
+                            <normal>
+                                <action id="adjustCounter">
+                                    <string id="id">Toolkit_TargetPersist_LastTargetClass</string>
+                                    <string id="value">12</string>
+                                    <string id="adjust method" values="valueadjust">set</string>
+                                </action>
+                            </normal>
+                        </condition>
+                        <condition id="checkClass">
+                            <string id="check on" values="targetself">target</string>
+                            <string id="class">Spy</string>
+                            <normal>
+                                <action id="adjustCounter">
+                                    <string id="id">Toolkit_TargetPersist_LastTargetClass</string>
+                                    <string id="value">13</string>
+                                    <string id="adjust method" values="valueadjust">set</string>
+                                </action>
+                            </normal>
+                        </condition>
+                        <condition id="checkClass">
+                            <string id="check on" values="targetself">target</string>
+                            <string id="class">Brute</string>
+                            <normal>
+                                <action id="adjustCounter">
+                                    <string id="id">Toolkit_TargetPersist_LastTargetClass</string>
+                                    <string id="value">14</string>
+                                    <string id="adjust method" values="valueadjust">set</string>
+                                </action>
+                            </normal>
+                        </condition>
+                        <condition id="checkClass">
+                            <string id="check on" values="targetself">target</string>
+                            <string id="class">Shaman</string>
+                            <normal>
+                                <action id="adjustCounter">
+                                    <string id="id">Toolkit_TargetPersist_LastTargetClass</string>
+                                    <string id="value">15</string>
+                                    <string id="adjust method" values="valueadjust">set</string>
+                                </action>
+                            </normal>
+                        </condition>
+                        <condition id="checkClass">
+                            <string id="check on" values="targetself">target</string>
+                            <string id="class">Captain</string>
+                            <normal>
+                                <action id="adjustCounter">
+                                    <string id="id">Toolkit_TargetPersist_LastTargetClass</string>
+                                    <string id="value">16</string>
+                                    <string id="adjust method" values="valueadjust">set</string>
+                                </action>
+                            </normal>
+                        </condition>
+                        <condition id="checkClass">
+                            <string id="check on" values="targetself">target</string>
+                            <string id="class">Commando</string>
+                            <normal>
+                                <action id="adjustCounter">
+                                    <string id="id">Toolkit_TargetPersist_LastTargetClass</string>
+                                    <string id="value">17</string>
+                                    <string id="adjust method" values="valueadjust">set</string>
+                                </action>
+                            </normal>
+                        </condition>
+                        <condition id="checkClass">
+                            <string id="check on" values="targetself">target</string>
+                            <string id="class">Bird</string>
+                            <normal>
+                                <action id="adjustCounter">
+                                    <string id="id">Toolkit_TargetPersist_LastTargetClass</string>
+                                    <string id="value">18</string>
+                                    <string id="adjust method" values="valueadjust">set</string>
+                                </action>
+                            </normal>
+                        </condition>
+                        <condition id="checkClass">
+                            <string id="check on" values="targetself">target</string>
+                            <string id="class">Summoner</string>
+                            <normal>
+                                <action id="adjustCounter">
+                                    <string id="id">Toolkit_TargetPersist_LastTargetClass</string>
+                                    <string id="value">19</string>
+                                    <string id="adjust method" values="valueadjust">set</string>
+                                </action>
+                            </normal>
+                        </condition>
+                        <condition id="checkClass">
+                            <string id="check on" values="targetself">target</string>
+                            <string id="class">Jetter</string>
+                            <normal>
+                                <action id="adjustCounter">
+                                    <string id="id">Toolkit_TargetPersist_LastTargetClass</string>
+                                    <string id="value">20</string>
+                                    <string id="adjust method" values="valueadjust">set</string>
+                                </action>
+                            </normal>
+                        </condition>
+                        <condition id="checkClass">
+                            <string id="check on" values="targetself">target</string>
+                            <string id="class">CreepCritterRibbit4</string>
+                            <normal>
+                                <action id="adjustCounter">
+                                    <string id="id">Toolkit_TargetPersist_LastTargetClass</string>
+                                    <string id="value">21</string>
+                                    <string id="adjust method" values="valueadjust">set</string>
+                                </action>
+                            </normal>
+                        </condition>
+                        <condition id="checkClass">
+                            <string id="check on" values="targetself">target</string>
+                            <string id="class">CreepCritterSorona</string>
+                            <normal>
+                                <action id="adjustCounter">
+                                    <string id="id">Toolkit_TargetPersist_LastTargetClass</string>
+                                    <string id="value">22</string>
+                                    <string id="adjust method" values="valueadjust">set</string>
+                                </action>
+                            </normal>
+                        </condition>
+                        <condition id="checkClass">
+                            <string id="check on" values="targetself">target</string>
+                            <string id="class">CreepCritterAIStation404</string>
+                            <normal>
+                                <action id="adjustCounter">
+                                    <string id="id">Toolkit_TargetPersist_LastTargetClass</string>
+                                    <string id="value">23</string>
+                                    <string id="adjust method" values="valueadjust">set</string>
+                                </action>
+                            </normal>
+                        </condition>
+                        <condition id="checkClass">
+                            <string id="check on" values="targetself">target</string>
+                            <string id="class">CreepSolarboss</string>
+                            <normal>
+                                <action id="adjustCounter">
+                                    <string id="id">Toolkit_TargetPersist_LastTargetClass</string>
+                                    <string id="value">24</string>
+                                    <string id="adjust method" values="valueadjust">set</string>
+                                </action>
+                            </normal>
+                        </condition>
+                        <condition id="checkClass">
+                            <string id="check on" values="targetself">target</string>
+                            <string id="class">CreepDroidMelee</string>
+                            <normal>
+                                <action id="adjustCounter">
+                                    <string id="id">Toolkit_TargetPersist_LastTargetClass</string>
+                                    <string id="value">25</string>
+                                    <string id="adjust method" values="valueadjust">set</string>
+                                </action>
+                            </normal>
+                        </condition>
+                        <condition id="checkClass">
+                            <string id="check on" values="targetself">target</string>
+                            <string id="class">CreepDroidFlying</string>
+                            <normal>
+                                <action id="adjustCounter">
+                                    <string id="id">Toolkit_TargetPersist_LastTargetClass</string>
+                                    <string id="value">26</string>
+                                    <string id="adjust method" values="valueadjust">set</string>
+                                </action>
+                            </normal>
+                        </condition>
+                        <condition id="checkClass">
+                            <string id="check on" values="targetself">target</string>
+                            <string id="class">CreepDroidSuper</string>
+                            <normal>
+                                <action id="adjustCounter">
+                                    <string id="id">Toolkit_TargetPersist_LastTargetClass</string>
+                                    <string id="value">27</string>
+                                    <string id="adjust method" values="valueadjust">set</string>
+                                </action>
+                            </normal>
+                        </condition>
+                        <condition id="checkClass">
+                            <string id="check on" values="targetself">target</string>
+                            <string id="class">CreepCowboyBull</string>
+                            <normal>
+                                <action id="adjustCounter">
+                                    <string id="id">Toolkit_TargetPersist_LastTargetClass</string>
+                                    <string id="value">28</string>
+                                    <string id="adjust method" values="valueadjust">set</string>
+                                </action>
+                            </normal>
+                        </condition>
+                        <condition id="checkClass">
+                            <string id="check on" values="targetself">target</string>
+                            <string id="class">CreepChameleonClone</string>
+                            <normal>
+                                <action id="adjustCounter">
+                                    <string id="id">Toolkit_TargetPersist_LastTargetClass</string>
+                                    <string id="value">29</string>
+                                    <string id="adjust method" values="valueadjust">set</string>
+                                </action>
+                            </normal>
+                        </condition>
+                        <condition id="checkClass">
+                            <string id="check on" values="targetself">target</string>
+                            <string id="class">CreepSummonerDrone</string>
+                            <string id="Comment">Well, it MIGHT be useful....</string>
+                            <normal>
+                                <action id="adjustCounter">
+                                    <string id="id">Toolkit_TargetPersist_LastTargetClass</string>
+                                    <string id="value">30</string>
+                                    <string id="adjust method" values="valueadjust">set</string>
+                                </action>
+                            </normal>
+                        </condition>
+                        <condition id="checkClass">
+                            <string id="check on" values="targetself">target</string>
+                            <string id="class">CreepSummonerHealtotem</string>
+                            <normal>
+                                <action id="adjustCounter">
+                                    <string id="id">Toolkit_TargetPersist_LastTargetClass</string>
+                                    <string id="value">31</string>
+                                    <string id="adjust method" values="valueadjust">set</string>
+                                </action>
+                            </normal>
+                        </condition>
+                        <condition id="checkClass">
+                            <string id="check on" values="targetself">target</string>
+                            <string id="class">CreepMawTurret</string>
+                            <normal>
+                                <action id="adjustCounter">
+                                    <string id="id">Toolkit_TargetPersist_LastTargetClass</string>
+                                    <string id="value">32</string>
+                                    <string id="adjust method" values="valueadjust">set</string>
+                                </action>
+                            </normal>
+                        </condition>
+                        <condition id="checkClass">
+                            <string id="check on" values="targetself">target</string>
+                            <string id="class">CreepCritterCrab</string>
+                            <normal>
+                                <action id="adjustCounter">
+                                    <string id="id">Toolkit_TargetPersist_LastTargetClass</string>
+                                    <string id="value">33</string>
+                                    <string id="adjust method" values="valueadjust">set</string>
+                                </action>
+                            </normal>
+                        </condition>
+                        <condition id="checkClass">
+                            <string id="check on" values="targetself">target</string>
+                            <string id="class">CreepCaptainChain</string>
+                            <normal>
+                                <action id="adjustCounter">
+                                    <string id="id">Toolkit_TargetPersist_LastTargetClass</string>
+                                    <string id="value">34</string>
+                                    <string id="adjust method" values="valueadjust">set</string>
+                                </action>
+                            </normal>
+                        </condition>
+                        <condition id="checkClass">
+                            <string id="check on" values="targetself">target</string>
+                            <string id="class">CreepCommandoAirstrike</string>
+                            <normal>
+                                <action id="adjustCounter">
+                                    <string id="id">Toolkit_TargetPersist_LastTargetClass</string>
+                                    <string id="value">35</string>
+                                    <string id="adjust method" values="valueadjust">set</string>
+                                </action>
+                            </normal>
+                        </condition>
+                        <condition id="checkClass">
+                            <string id="check on" values="targetself">target</string>
+                            <string id="class">CreepShamanWall</string>
+                            <normal>
+                                <action id="adjustCounter">
+                                    <string id="id">Toolkit_TargetPersist_LastTargetClass</string>
+                                    <string id="value">36</string>
+                                    <string id="adjust method" values="valueadjust">set</string>
+                                </action>
+                            </normal>
+                        </condition>
+                        <condition id="checkClass">
+                            <string id="check on" values="targetself">target</string>
+                            <string id="class">CreepSpyBooth</string>
+                            <normal>
+                                <action id="adjustCounter">
+                                    <string id="id">Toolkit_TargetPersist_LastTargetClass</string>
+                                    <string id="value">37</string>
+                                    <string id="adjust method" values="valueadjust">set</string>
+                                </action>
+                            </normal>
+                        </condition>
+                        <condition id="checkClass">
+                            <string id="check on" values="targetself">target</string>
+                            <string id="class">CreepSpy</string>
+                            <normal>
+                                <action id="adjustCounter">
+                                    <string id="id">Toolkit_TargetPersist_LastTargetClass</string>
+                                    <string id="value">38</string>
+                                    <string id="adjust method" values="valueadjust">set</string>
+                                </action>
+                            </normal>
+                        </condition>
+                        <condition id="isTargetType">
+                            <string id="condition" values="yesno">yes</string>
+                            <string id="target groups" values="target groups" multiselect="true">DESTROYABLE_OBSTACLES;;</string>
+                            <string id="Comment">Turrets and drill cores</string>
+                            <normal>
+                                <action id="adjustCounter">
+                                    <string id="id">Toolkit_TargetPersist_LastTargetClass</string>
+                                    <string id="value">39</string>
+                                    <string id="adjust method" values="valueadjust">set</string>
+                                </action>
+                            </normal>
+                        </condition>
+                        <condition id="isFromTeam">
+                            <string id="team" values="teamswithnumbers">OWN_TEAM</string>
+                            <string id="check on" values="targetself">target</string>
+                            <normal>
+                                <action id="adjustCounter">
+                                    <string id="id">Toolkit_TargetPersist_LastTargetTeam</string>
+                                    <string id="value">1</string>
+                                    <string id="adjust method" values="valueadjust">set</string>
+                                </action>
+                            </normal>
+                        </condition>
+                        <condition id="isFromTeam">
+                            <string id="team" values="teamswithnumbers">ENEMY_TEAM</string>
+                            <string id="check on" values="targetself">target</string>
+                            <normal>
+                                <action id="adjustCounter">
+                                    <string id="id">Toolkit_TargetPersist_LastTargetTeam</string>
+                                    <string id="value">2</string>
+                                    <string id="adjust method" values="valueadjust">set</string>
+                                </action>
+                            </normal>
+                        </condition>
+                        <condition id="isFromTeam">
+                            <string id="team" values="teamswithnumbers">NEUTRAL_TEAM</string>
+                            <string id="check on" values="targetself">target</string>
+                            <normal>
+                                <action id="adjustCounter">
+                                    <string id="id">Toolkit_TargetPersist_LastTargetTeam</string>
+                                    <string id="value">3</string>
+                                    <string id="adjust method" values="valueadjust">set</string>
+                                </action>
+                            </normal>
+                        </condition>
+                    </else>
+                </condition>
+            </normal>
+        </root>
+    </behaviour>
+</enemy>
