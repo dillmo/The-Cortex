@@ -325,6 +325,31 @@
                         </condition>
                     </or>
                 </andblock>
+                <andblock>
+                    <string id="Comment">Fixes getting stuck above the drill</string>
+                    <normal>
+                        <action id="setBool">
+                            <string id="id">goForward</string>
+                            <string id="value" values="flagtoggle">yes</string>
+                        </action>
+                        <action id="setBool">
+                            <string id="id">goBack</string>
+                            <string id="value" values="flagtoggle">no</string>
+                        </action>
+                    </normal>
+                    <or>
+                        <condition id="isInNamedArea">
+                            <string id="area name">healAreaClose</string>
+                            <string id="team" values="ownenemy">OWN_TEAM</string>
+                            <string id="who" values="targetself">self</string>
+                        </condition>
+                        <condition id="checkCounter">
+                            <string id="id">state</string>
+                            <string id="value">3</string>
+                            <string id="compare method" values="valuecompare">equal</string>
+                        </condition>
+                    </or>
+                </andblock>
             </normal>
         </root>
     </behaviour>
